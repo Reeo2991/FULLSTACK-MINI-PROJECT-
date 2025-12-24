@@ -1,0 +1,53 @@
+:root {
+  --bg: #f3eef7;            /* very light blue for background */
+  --card: #ffffff;           /* clean white cards */
+  --border: #c0c6e4;         /* soft blue-gray border */
+  --text: #1a1a3d;           /* dark royal blue text */
+  --muted: #6b6f90;          /* muted grayish blue for secondary text */
+  --primary: #5c4dff;        /* vibrant royal purple */
+  --primary-hover: #3a2ecb;  /* darker purple for hover */
+  --success: #28a745;        /* classic green */
+  --danger: #d63333;         /* bold red */
+  
+  /* gradient for buttons or highlights */
+  --gradient: linear-gradient(135deg, #5c4dff 0%, #4fc1ff 100%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Common Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
